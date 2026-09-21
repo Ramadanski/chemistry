@@ -1,2 +1,2 @@
 require "spec"
-require "../src/chemsproject"
+require "../src/chemistry"
