@@ -1,39 +1,72 @@
-# chemsproject
+# Chemistry
 
-TODO: Write a description here
+A Crystal library containing information about all 118 chemical elements.
 
 ## Installation
 
-1. Add the dependency to your `shard.yml`:
+Add the dependency to your `shard.yml`:
 
-   ```yaml
-   dependencies:
-     chemsproject:
-       github: your-github-user/chemsproject
-   ```
+```yaml
+dependencies:
+  chemistry:
+    github: Ramadanski/chemistry
+```
 
-2. Run `shards install`
+Then run:
+
+```bash
+shards install
+```
 
 ## Usage
 
 ```crystal
-require "chemsproject"
+require "chemistry"
+
+puts Chemistry::ELEMENTS["H"][:name]
+puts Chemistry::ELEMENTS["C"][:mass]
+puts Chemistry::ELEMENTS["Fe"][:number]
 ```
 
-TODO: Write usage instructions here
+Output:
+
+```text
+Hydrogen
+12.011
+26
+```
 
 ## Development
 
-TODO: Write development instructions here
+Clone the repository:
+
+```bash
+git clone https://github.com/Ramadanski/chemistry.git
+cd chemistry
+```
+
+Run the tests:
+
+```bash
+crystal spec
+```
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/chemsproject/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Make your changes.
+4. Commit your changes.
+5. Push your branch.
+6. Open a Pull Request.
 
 ## Contributors
 
-- [your-name-here](https://github.com/your-github-user) - creator and maintainer
+* [Ramadanski](https://github.com/Ramadanski) - creator and maintainer
+
+## License
+
+MIT
+
