@@ -69,4 +69,3 @@ Contributions are welcome!
 ## License
 
 MIT
-
